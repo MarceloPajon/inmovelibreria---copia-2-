@@ -2,7 +2,7 @@
 @import "fuentes";
 @import "generales";
 @import "index";
-
+@import "media";
 
 .grid{
     display: grid;
@@ -106,13 +106,6 @@ img{
     gap: 0.5em;
 }
 
-nav ul li{
-    color:goldenrod;
-    border:3px solid #3a3548;
-}
-
-}
-
 @media(min-width:768px){
     .barra{
         margin-bottom:1em;
@@ -126,14 +119,6 @@ nav ul li{
         gap: 1.5em;
     }
 
-    nav ul li{
-        color:#3a3548;
-        border:3px solid goldenrod;
-    }
-
-    nav ul li{
-        border:3px solid darkgoldenrod
-    }
 
     a{
         color: white;
