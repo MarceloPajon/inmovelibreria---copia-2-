@@ -1,0 +1,20 @@
+header {
+    font-size: larger;
+    display: grid;
+    background-color: goldenrod;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 1.5em;
+    border: 1rem solid #3a3548;
+
+    nav ul li {
+        list-style: none;
+        border: 3px solid white;
+
+        a {
+            text-decoration: none;
+            color: #3a3548;
+        }
+
+    }
+}
