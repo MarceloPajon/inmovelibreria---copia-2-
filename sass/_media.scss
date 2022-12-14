@@ -1,16 +1,19 @@
 nav ul li {
     list-style: none;
     border: 3px solid white;
-    @media (min-width:500px){
-        color:goldenrod;
-        border:3px solid #3a3548;
+
+    @media (min-width:500px) {
+        color: goldenrod;
+        border: 3px solid #3a3548;
     }
-    @media (min-width:768px){
-        color:#3a3548;
-        border:3px solid goldenrod; 
+
+    @media (min-width:768px) {
+        color: #3a3548;
+        border: 3px solid goldenrod;
     }
-    @media (min-width:1024px){
-        color:#3a3548;
-        border:3px solid goldenrod;
+
+    @media (min-width:1024px) {
+        color: #3a3548;
+        border: 3px solid goldenrod;
     }
-    }
+}
