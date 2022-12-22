@@ -239,3 +239,12 @@ img {
         margin-top: 10fr;
     }
 }
+
+/* //miin// */
+.my_mixin{
+    width: 50fr;
+    height: 50fr;
+    border:10fr solid transparent;
+    color:black;
+    text-align: center;
+}
