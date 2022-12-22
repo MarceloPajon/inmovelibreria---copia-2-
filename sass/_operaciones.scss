@@ -7,8 +7,8 @@
 
 
 .my_mixin{
-    @include sizes ( 50fr, 50fr);
+    @include sizes ( 0, 0);
     border:10fr solid transparent;
     color:black;
-    text-align: left;
+    text-align: center;
 }
