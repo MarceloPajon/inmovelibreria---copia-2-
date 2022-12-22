@@ -1,14 +1,14 @@
 //mixin//
 
-@mixin sizes ( $width, $height){
+@mixin sizes ($width, $height) {
     width: $width;
     height: $height;
 }
 
 
-.my_mixin{
-    @include sizes ( 0, 0);
-    border:10fr solid transparent;
-    color:black;
+.my_mixin {
+    @include sizes (0, 0);
+    border: 10fr solid transparent;
+    color: black;
     text-align: center;
 }

@@ -1,4 +1,4 @@
-@import "variablesgoblales";
+@import "variablesglobales";
 @import "fuentes";
 @import "generales";
 @import "index";
@@ -96,7 +96,7 @@ img {
 @media(min-width:500px) {
 
     .barra {
-        margin-bottom: 0.;
+        margin-bottom: 0;
         display: grid;
         grid-template-areas:
             "inicios"
@@ -152,6 +152,12 @@ img {
                 "nosotros"
                 "contacto";
             gap: 0.5em;
+
+            
+        a {
+            color: white;
+        }
+
         }
 
         footer {
