@@ -1,218 +1,239 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Roboto&display=swap");
+
 /* mobile first 0px-500px */
 * {
-  padding: 0%;
-  margin: 0%;
+    padding: 0%;
+    margin: 0%;
 }
 
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 body {
-  background-color: gainsboro;
-  font-family: "poppin", "sans-serif";
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    background-color: gainsboro;
+    font-family: "poppin", "sans-serif";
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 footer {
-  padding: 8em;
-  background-color: goldenrod;
-  margin-bottom: 0;
-  margin-top: 1.5em;
-  border: 1rem solid #3a3548;
+    padding:auto;
+    background-color: goldenrod;
+    margin-bottom: 0;
+    margin-top: 1.5em;
+    border: 1rem solid #3a3548;
 }
 
 header {
-  font-size: larger;
-  display: grid;
-  background-color: goldenrod;
-  justify-content: center;
-  list-style: none;
-  margin-bottom: 1.5em;
-  border: 1rem solid #3a3548;
+    font-size: larger;
+    display: grid;
+    background-color: goldenrod;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 1.5em;
+    border: 1rem solid #3a3548;
 }
+
 header nav ul li {
-  list-style: none;
-  border: 3px solid white;
+    list-style: none;
+    border: 3px solid white;
 }
+
 header nav ul li a {
-  text-decoration: none;
-  color: #3a3548;
+    text-decoration: none;
+    color: #3a3548;
 }
 
 nav ul li {
-  list-style: none;
-  border: 3px solid white;
+    list-style: none;
+    border: 3px solid white;
 }
+
 @media (min-width: 500px) {
-  nav ul li {
-    color: goldenrod;
-    border: 3px solid #3a3548;
-  }
+    nav ul li {
+        color: goldenrod;
+        border: 3px solid #3a3548;
+    }
 }
+
 @media (min-width: 768px) {
-  nav ul li {
-    color: #3a3548;
-    border: 3px solid goldenrod;
-  }
+    nav ul li {
+        color: #3a3548;
+        border: 3px solid goldenrod;
+    }
 }
+
 @media (min-width: 1024px) {
-  nav ul li {
-    color: #3a3548;
-    border: 3px solid goldenrod;
-  }
-  nav ul li a {
-    color: white;
-  }
+    nav ul li {
+        color: #3a3548;
+        border: 3px solid goldenrod;
+    }
+
+    nav ul li a {
+        color: white;
+    }
 }
 
 .my_mixin {
-  width: 0;
-  height: 0;
-  border: 10fr solid transparent;
-  color: black;
-  text-align: center;
+    width: 0;
+    height: 0;
+    border: 10fr solid transparent;
+    color: black;
+    text-align: center;
 }
 
 .grid {
-  display: grid;
-  justify-items: end;
-  margin-top: 3px;
+    display: grid;
+    justify-items: end;
+    margin-top: 3px;
 }
 
 .inicio {
-  grid-area: inicio;
+    grid-area: inicio;
 }
 
 .servicios {
-  grid-area: servicios;
+    grid-area: servicios;
 }
 
 .productos {
-  grid-area: productos;
+    grid-area: productos;
 }
 
 .nosotros {
-  grid-area: nosotros;
+    grid-area: nosotros;
 }
 
 .contacto {
-  grid-area: contacto;
+    grid-area: contacto;
 }
 
 header {
-  display: grid;
+    display: grid;
 }
 
 .barra {
-  padding: auto;
-  background-color: goldenrod;
-  margin-bottom: 0.5em;
-  display: grid;
-  grid-template-areas: "inicios" "servicios" "productos" "nosotros" "contacto";
-  gap: 0.5em;
+    padding: auto;
+    background-color: goldenrod;
+    margin-bottom: 0.5em;
+    display: grid;
+    grid-template-areas: "inicios""servicios""productos""nosotros""contacto";
+    gap: 0.5em;
 }
 
 .prod {
-  display: grid;
-  grid-template-columns: 2fr;
-  grid-template-rows: 2fr;
-  justify-items: center;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 2fr;
+    justify-items: center;
 }
 
 .uctos {
-  padding: 2fr;
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+    padding: 2fr;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
 }
 
 img {
-  padding: 1fr;
-  border: 8px solid #3a3548;
-  border-radius: 3rem;
-  width: 20fr;
-  height: 10fr;
-  margin-top: 5fr;
+    padding: 1fr;
+    border: 8px solid #3a3548;
+    border-radius: 3rem;
+    width: 20fr;
+    height: 10fr;
+    margin-top: 5fr;
 }
 
 .bg {
-  background-color: black;
+    background-color: black;
 }
 
 .acercar {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .acercar img {
-  transition: all 2s;
+    transition: all 2s;
 }
 
 .acercar:hover img {
-  transform: scale(1.5);
+    transform: scale(1.5);
 }
 
 /* declaro mi primera MQ */
 @media (min-width: 500px) {
-  .barra {
-    margin-bottom: 0;
-    display: grid;
-    grid-template-areas: "inicios" "servicios" "productos" "nosotros" "contacto";
-    gap: 0.5em;
-  }
+    .barra {
+        margin-bottom: 0;
+        display: grid;
+        grid-template-areas: "inicios""servicios""productos""nosotros""contacto";
+        gap: 0.5em;
+    }
 }
+
 @media (min-width: 500px) and (min-width: 768px) {
-  .barra {
-    margin-bottom: 1em;
-    display: grid;
-    grid-template-areas: "inicios" "servicios" "productos" "nosotros" "contacto";
-    gap: 1.5em;
-  }
-  a {
-    color: white;
-  }
+    .barra {
+        margin-bottom: 1em;
+        display: grid;
+        grid-template-areas: "inicios""servicios""productos""nosotros""contacto";
+        gap: 1.5em;
+    }
+
+    a {
+        color: white;
+    }
+
 }
+
 @media (min-width: 500px) and (min-width: 1024px) {
-  body {
-    background-color: goldenrod;
-  }
-  .barra {
-    color: rgb(176, 109, 17);
-  }
-  header {
-    background-color: #3a3548;
-  }
-  .barra {
-    padding: auto;
-    background-color: #3a3548;
-    margin-bottom: 0.5em;
-    display: grid;
-    grid-template-areas: "inicios" "servicios" "productos" "nosotros" "contacto";
-    gap: 0.5em;
-  }
-  .barra a {
-    color: white;
-  }
-  footer {
-    padding: 8em;
-    background-color: #3a3548;
-    margin-bottom: 0;
-    margin-top: 1.5em;
-    border: 1rem solid goldenrod;
-  }
-  a {
-    color: goldenrod;
-  }
-  img {
-    border: 8px solid goldenrod;
-    border-radius: 5rem;
-    width: 30fr;
-    height: 15fr;
-    margin-top: 10fr;
-  }
-}/*# sourceMappingURL=estilos.css.map */
+    body {
+        background-color: goldenrod;
+    }
+
+    .barra {
+        color: rgb(176, 109, 17);
+    }
+
+    header {
+        background-color: #3a3548;
+    }
+
+    .barra {
+        padding: auto;
+        background-color: #3a3548;
+        margin-bottom: 0.5em;
+        display: grid;
+        grid-template-areas: "inicios""servicios""productos""nosotros""contacto";
+        gap: 0.5em;
+    }
+
+    .barra a {
+        color: white;
+    }
+
+    footer {
+        padding: 8em;
+        background-color: #3a3548;
+        margin-bottom: 0;
+        margin-top: 1.5em;
+        border: 1rem solid goldenrod;
+
+    }
+
+    a {
+        color: goldenrod;
+    }
+
+    img {
+        border: 8px solid goldenrod;
+        border-radius: 5rem;
+        width: 30fr;
+        height: 15fr;
+        margin-top: 10fr;
+    }
+}
+
+/*# sourceMappingURL=estilos.css.map */
